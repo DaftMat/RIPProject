@@ -47,8 +47,9 @@ Will remove all the .o files, and all the logs files.
 ## Managing routers
 
 First, you may be interrested in `help` command, here is what it will print all the possible commands :
-	* `ping <r>` 		: send echo request to the selected router.
-	* `pingforce <r>` 	: force the sending of a ping (until timeout, 1min).
-	* `traceroute <r>` 	: send a ping to r and show all the route it takes.
-	* `show ip route` 	: prints its routing table.
-	* `show ip neigh`	: prints its neighbors.
+
+* `ping <r>` 		: send echo request to the selected router.
+* `pingforce <r>` 	: force the sending of a ping (until timeout, 1min).
+* `traceroute <r>` 	: send a ping to r and show all the route it takes.
+* `show ip route` 	: prints its routing table.
+* `show ip neigh`	: prints its neighbors.
