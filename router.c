@@ -247,7 +247,7 @@ void remove_entry(routing_table_entry_t *rt, int i, int size){
 void remove_obsolete_entries(routing_table_t *rt) {
     //Do not remove itself.
     for (int i = 1 ; i < rt->size ; ++i){
-        if (difftime(BROADCAST_PERIOD+rt->rt[i].time,rt->rt[i].time) < 0){
+        if (difftime(rt->rt[i].time, time(NULL)) < 0){
             --rt->size;
             remove_entry(rt->rt, i, rt->size);
             --i;
